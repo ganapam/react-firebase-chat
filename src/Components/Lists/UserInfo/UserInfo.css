@@ -1,0 +1,75 @@
+.userinfo{
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .user{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    
+    .icons{
+        display: flex;
+        gap:20px;
+        img{
+            width:20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}
+.userinfo .icons button.online {
+    background-color: red; /* Change to red for online */
+    color: white;
+  }
+  
+  .userinfo .icons button.offline {
+    background-color: green; /* Change to green for offline */
+    color: white;
+  }
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%; /* Position below the image */
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  .edit-buttons {
+    position: relative;
+  }
+  .user input[type="text"] {
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the input field horizontally */
+    display: block; /* Display the input field as a block element */
+  }
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown button {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
